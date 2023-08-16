@@ -9,14 +9,12 @@
 <body>
     <h1>Rafa's Calculator</h1>
     <div class="centerBox">
-        <div class="display" id="display">
-            
-        </div>
+        <div class="display" id="display"></div>
         <div class="numberPad">
                 <button id="C" onclick="deleteOne()">C</button>
                 <button id="AC" onclick="deleteAll()">AC</button>
                 <button id="signal" onclick="signal()">+/-</button>
-                <button id="sqrt">√</button>
+                <button id="sqrt" onclick="root()">√</button>
                 <button id="7" onclick="calculation(this.id)">7</button>
                 <button id="8" onclick="calculation(this.id)">8</button>
                 <button id="9" onclick="calculation(this.id)">9</button>
@@ -35,9 +33,6 @@
                 <button id="equal" onclick="equal()">=</button>
         </div>
     </div>
-
-
-
     <script src="app.js"></script>
 </body>
 </html>
