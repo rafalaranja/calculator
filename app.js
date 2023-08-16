@@ -31,10 +31,15 @@ function signal(){
 }
 
 function equal(){
+    try{
     result = eval(sum);
     rounded = result.toString().length > max_length ? result.toFixed(4) : result;   //verify if the result is bigger than the max_length
     document.getElementById("display").innerHTML = rounded
     sum = document.getElementById("display").innerHTML;
+    }
+    catch(err){
+        alert("Invalid operation");
+    }
 }
 
 function root(){
